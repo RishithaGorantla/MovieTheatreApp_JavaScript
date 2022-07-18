@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Movieplex</title>
+  </head>
+
+  <body id="body">
+    <header>
+      <img src="Images/copy.jpg" alt="logo" />
+      <h1>Movieplex</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theatres.html">Theatres</a></li>
+        <li><a href="ticket_select.html">Tickets</a></li>
+        <li><a href="food&drinks.html">Food & Drinks</a></li>
+        <li><a href="buzz.html">Movie Buzz</a></li>
+        <li><a href="register.html">Screen Booking</a></li>
+        <li><a href="review.html">Movie Review</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div
+        id="success"
+        class="alert alert-success alert-dismissible fade"
+        role="alert"
+      >
+        <strong>Success!</strong> Your details have been successfully submitted.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div
+        id="failure"
+        class="alert alert-danger alert-dismissible fade"
+        role="alert"
+      >
+        <strong>Error!</strong> Your contact details have not been sent due to
+        errors
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="container">
+        <h1>Book your Screen</h1>
+        <form>
+          <div class="form-group">
+            <label for="name">Fullname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your fullname"
+            />
+            <small id="namevalid" class="form-text text-muted invalid-feedback">
+              Your username must be 2-10 characters long and should not start
+              with a number
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <small
+              id="emailvalid"
+              class="form-text text-muted invalid-feedback"
+            >
+              Your email must be a valid email
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="car">Type of screening</label>
+            <select class="form-control" id="car">
+              <option></option>
+              <option>Private Movie nights(Upto 20 guests)</option>
+              <option>Group Screenings(upto 75 guests)</option>
+              <option>Mega Screening(upto 100 guests)</option>
+              <option>For Gaming(upto 50 guests)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your address</label>
+            <textarea
+              class="form-control"
+              name="address"
+              id="address"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your phone number</label>
+            <input class="form-control" name="phone" id="phone" rows="3" />
+            <small
+              id="emailvalid"
+              class="form-text text-muted invalid-feedback"
+            >
+              Your phone number must be 10 digit long
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"
+              >Any other message...</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button id="submit" class="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Health & Safety</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <div class="icons">
+        <ul>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="register.js"></script>
+</html>

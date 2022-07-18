@@ -1,0 +1,926 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.pgragh {
+  text-align: center;
+  margin-top: 2rem;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*----header----*/
+header {
+  background-color: #000;
+  padding: 10px 0;
+  border: 2px solid #000;
+}
+header img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header h1 {
+  font-size: 35px;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(192, 9, 9);
+}
+
+/*-----nav----*/
+nav {
+  background-color: #000;
+  padding: 15px 0;
+  border: 2px solid rgb(192, 9, 9);
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav a:hover {
+  color: rgb(192, 9, 9);
+  padding: 5px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+/*------Mainheading-----*/
+.mainheading {
+  background-image: url("../Images/index-bg.jpg");
+  background-size: cover;
+  height: 600px;
+}
+#subtitle {
+  font-size: 55px;
+  padding-bottom: 50px;
+}
+.head-desc {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.head-desc h1 {
+  color: rgb(192, 9, 9);
+  opacity: 60%;
+  font-size: 75px;
+  text-transform: uppercase;
+}
+.head-desc p {
+  font-size: 20px;
+  color: #000;
+}
+.head-desc a {
+  text-decoration: none;
+  color: #000;
+}
+.head-desc a:hover {
+  color: rgb(192, 9, 9);
+  border-bottom: 1px solid rgb(192, 9, 9);
+  font-size: 30px;
+}
+#membership {
+  background-color: #fff;
+  opacity: 40%;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/*------all movies section-----*/
+
+.movieshead {
+  background-color: #faf9f6;
+  height: 200px;
+  padding: 50px 0;
+}
+.movieshead h1 {
+  color: rgb(192, 9, 9);
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.movieshead p {
+  text-align: center;
+  color: rgb(192, 9, 9);
+  font-size: 20px;
+}
+
+/*------now showing------*/
+
+.nowshowing {
+  background-image: linear-gradient(
+      rgba(40, 43, 50, 0.75),
+      rgba(40, 43, 50, 0.75)
+    ),
+    url("../images/allmovies-bg.jpg");
+  background-size: cover;
+  height: 650px;
+}
+.nowshowing h2 {
+  padding: 30px 0;
+  text-transform: uppercase;
+  color: rgb(192, 9, 9);
+  font-size: 40px;
+  text-align: center;
+}
+#movieslist img {
+  height: 300px;
+  width: 200px;
+}
+.movie:hover {
+  transform: scale(1.15);
+}
+#movieslist {
+  display: flex;
+  flex-direction: row;
+  margin: 6px;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.trailer {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 50px;
+}
+.trailer a:hover {
+  color: rgb(192, 9, 9);
+}
+.movie {
+  border: 2px solid #fff;
+  padding-bottom: 15px;
+  transition: transform 0.5s;
+}
+.showmore-btn {
+  text-align: center;
+  margin-top: 80px;
+}
+.showmore-btn a {
+  background-color: rgb(192, 9, 9);
+  padding: 10px 50px;
+  border: 2px solid rgb(192, 9, 9);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/*-------coming soon-----*/
+.comingsoon {
+  padding-bottom: 30px;
+}
+.comingsoon h2 {
+  padding: 30px 0;
+  text-transform: uppercase;
+  color: rgb(192, 9, 9);
+  font-size: 40px;
+  text-align: center;
+}
+.comingsoon-list img {
+  height: 300px;
+  width: 250px;
+}
+.comingsoon-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  padding: 0 80px;
+}
+.movie1 {
+  border: 2px solid rgb(192, 9, 9);
+}
+.movie1 img {
+  float: left;
+  padding-right: 20px;
+}
+.movie-desc {
+  padding: 50px 0;
+  color: rgb(192, 9, 9);
+  font-size: 15px;
+  line-height: 30px;
+}
+
+/*------partners------*/
+.partners {
+  background-color: #000;
+  height: 450px;
+  border-bottom: 0.5px solid #fff;
+}
+.container {
+  background-color: white;
+  opacity: 75%;
+}
+.container h1 {
+  color: rgb(192, 9, 9);
+}
+.details-right {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  width: 10%;
+  grid-gap: 1em;
+  grid-template-columns: 6em 1fr;
+  color: white;
+}
+.details-right span {
+  padding-bottom: 30px;
+}
+.submit-btn {
+  text-align: center;
+  padding: 25px;
+}
+
+.partners h2 {
+  padding: 50px 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+.partner img {
+  height: 50px;
+  width: 50px;
+}
+.partner-name {
+  color: #fff;
+}
+.partners-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  width: 65%;
+  margin: auto;
+}
+
+/*-----buzz-----*/
+
+#buzz {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  text-align: justify;
+}
+
+#buzz h3 {
+  color: rgb(192, 9, 9);
+}
+
+#buzz p {
+  line-height: 1.5em;
+}
+#showmorebtn {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#showmorebtn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+#showmorebtn a:hover {
+  color: rgb(192, 9, 9);
+}
+
+/*-----Theatres-------*/
+
+.theatres {
+  border: 1px solid black;
+  width: 55%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.theatres h2 {
+  color: rgb(192, 9, 9);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.theatres p {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.theatres-btn {
+  width: 95%;
+  color: white;
+  height: 30px;
+  padding: 5px 0;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  border: 1px solid black;
+  text-decoration: none;
+  background-color: rgb(192, 9, 9);
+}
+
+/*------Tickets------*/
+.tickets {
+  height: 1000px;
+  padding-top: 40px;
+}
+.tick-desc h2 {
+  padding-bottom: 30px;
+}
+.tickets img {
+  height: 300px;
+  width: 230px;
+  margin: 0 30px 0 100px;
+  float: left;
+}
+.tick-desc {
+  line-height: 1.5em;
+  text-align: justify;
+}
+.tick-desc a {
+  text-decoration: none;
+  color: rgb(192, 9, 9);
+}
+#gettick-btn {
+  border: 2px solid rgb(192, 9, 9);
+  background-color: rgb(192, 9, 9);
+  padding: 5px 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.synopsis {
+  padding-top: 50px;
+  clear: both;
+  width: 60%;
+  padding-left: 100px;
+  text-align: justify;
+}
+.synopsis h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.synopsis p {
+  font-weight: normal;
+}
+.btns {
+  padding: 10px 0 30px 0;
+}
+.btns a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(192, 9, 9);
+  padding: 10px 30px;
+  background-color: rgb(192, 9, 9);
+  color: white;
+}
+.btns span {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+/*----Contact Form -----*/
+
+/*-----Login Form------*/
+
+.login {
+  display: block;
+  padding: 20px 0;
+  width: 50%;
+  height: 300px;
+  opacity: 60%;
+  margin: 30px auto;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.form {
+  display: block;
+  padding: 20px 0;
+  width: 50%;
+  height: 400px;
+  opacity: 60%;
+  margin: 30px auto;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.btn {
+  padding: 10px 60px 10px 40px;
+  display: grid;
+  margin: auto;
+  width: 40%;
+  grid-column-gap: 10px;
+  grid-template-columns: 6em 6em;
+}
+
+#body {
+  background: linear-gradient(to bottom, #ff0000 2%, #00000f 100%);
+}
+
+h1 {
+  color: white;
+}
+
+#login1 {
+  padding: 40px;
+  display: grid;
+  margin: auto;
+  width: 60%;
+  grid-gap: 1em;
+  grid-template-columns: 6em 1fr;
+}
+
+#form1 {
+  height: 100%;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+/*-----join form-----*/
+
+/*-----------Food and drinks------*/
+
+.popcorn {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../Images/pop-bg.jpeg");
+  background-size: cover;
+  height: 500px;
+}
+
+.popcorn h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(192, 9, 9);
+  padding-top: 20px;
+  margin-left: 35px;
+}
+
+.popcorn p {
+  color: rgb(226, 226, 226);
+  font-size: 20px;
+  width: 80%;
+  padding-top: 25px;
+  margin-left: 35px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.drink p {
+  width: 80%;
+  text-align: justify;
+}
+
+.menu {
+  background-color: #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.menu a {
+  text-decoration: underline;
+  color: rgb(192, 9, 9);
+}
+
+tr:nth-of-type(even) {
+  background: #eee;
+}
+
+.menu table,
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.menu table,
+tr {
+  background: rgb(226, 226, 226);
+  color: black;
+}
+
+/*----footer---*/
+footer {
+  height: 100px;
+  border: 2px solid #000;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 10px 0;
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+footer a:hover {
+  color: rgb(192, 9, 9);
+}
+footer ul {
+  width: 60%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.icons {
+  padding-top: 20px;
+}
+.icons ul {
+  width: 20%;
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+@media only all and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  header {
+    text-align: center;
+  }
+  #hide1,
+  #hide2 {
+    display: none;
+  }
+  #movieslist img {
+    height: 250px;
+    width: 150px;
+  }
+  .trailer {
+    padding-left: 30px;
+  }
+  .comingsoon-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+  }
+  .theatres {
+    width: 65%;
+  }
+  .tickets {
+    height: 1400px;
+    width: 100%;
+  }
+  .synopsis {
+    text-align: justify;
+    width: 75%;
+  }
+  .btns a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .btns span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .popcorn {
+    height: 550px;
+    width: auto;
+  }
+
+  /*----table----*/
+  .head {
+    font-weight: bolder;
+  }
+  .menu table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  td:nth-of-type(1):before {
+    content: "Items";
+  }
+  td:nth-of-type(2):before {
+    content: "SMALL";
+  }
+  td:nth-of-type(3):before {
+    content: "MEDIUM";
+  }
+  td:nth-of-type(4):before {
+    content: "LARGE";
+  }
+  td:nth-of-type(5):before {
+    content: " ";
+  }
+  #login1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #login1 label {
+    display: none;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+  .btn {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  #btn-1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .form {
+    width: 60%;
+    height: 450px;
+    padding: 80px 0;
+  }
+}
+@media only all and (min-width: 481px) and (max-width: 767px) {
+  .head-desc h1 {
+    font-size: 45px;
+  }
+  #subtitle {
+    font-size: 20px;
+  }
+  #membership {
+    width: 250px;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  nav li {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 35px;
+  }
+  .border {
+    border-bottom: 0.25px solid rgb(192, 9, 9);
+  }
+  #hide2 {
+    display: none;
+  }
+  #movieslist {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
+  .movie1 img {
+    padding-right: 0;
+  }
+  .nowshowing {
+    height: 1800px;
+  }
+  .comingsoon-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    padding: 0 30px;
+  }
+
+  .comingsoon-list img {
+    height: 300px;
+    width: 300px;
+  }
+  .movie-desc {
+    padding: 0;
+  }
+  .theatres {
+    width: 65%;
+  }
+  .tickets {
+    height: 1725px;
+    width: 100%;
+  }
+  .synopsis {
+    padding-left: 50px;
+    width: 90%;
+  }
+  .tickets img {
+    height: 300px;
+    width: 230px;
+    margin: 0 30px 0 30px;
+    float: left;
+    clear: both;
+    width: 40%;
+    padding-bottom: 15px;
+  }
+  .tick-desc {
+    padding-left: 50px;
+    line-height: 1.5em;
+    text-align: justify;
+    width: 55%;
+  }
+  #gettick-btn {
+    border: 2px solid rgb(192, 9, 9);
+    background-color: rgb(192, 9, 9);
+    padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .btns a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .btns span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  footer ul {
+    width: 60%;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .icons a {
+    margin: 0 7.5px;
+  }
+  .popcorn {
+    height: 800px;
+    width: auto;
+  }
+  .head {
+    font-weight: bolder;
+  }
+  .menu table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  td:nth-of-type(1):before {
+    content: "Items";
+  }
+  td:nth-of-type(2):before {
+    content: "SMALL";
+  }
+  td:nth-of-type(3):before {
+    content: "MEDIUM";
+  }
+  td:nth-of-type(4):before {
+    content: "LARGE";
+  }
+  td:nth-of-type(5):before {
+    content: " ";
+  }
+  footer {
+    height: 170px;
+  }
+
+  /*------FORMS-----*/
+
+  .login {
+    height: 350px;
+  }
+
+  #login1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  #login1 label {
+    display: none;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+  .btn {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  #btn-1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .form {
+    width: 60%;
+    height: 450px;
+    padding: 80px 0;
+  }
+}

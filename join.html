@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/validation.js"></script>
+    <title>Movieplex</title>
+  </head>
+  <body id="body">
+    <header>
+      <img src="Images/copy.jpg" alt="logo" />
+      <h1>Movieplex</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="theatres.html">Theatres</a></li>
+          <li><a href="ticket_select.html">Tickets</a></li>
+          <li><a href="food&drinks.html">Food & Drinks</a></li>
+          <li><a href="buzz.html">Movie Buzz</a></li>
+          <li><a href="register.html">Screen Booking</a></li>
+          <li><a href="review.html">Movie Review</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </ul>
+    </nav>
+    <main>
+    
+      <div class="form">
+        <h1>Sign up</h1>
+        <form onsubmit="register()">
+          <div id="login1" class="log">
+          <label for="firstname">User Name</label>
+          <input type="text" id="firstname" name="firstname" placeholder="User Name" required="required" /> 
+
+          <label for="lastname">Password</label>
+          <input type="password" id="lastname" name="lastname" placeholder="Password" required="required" /> 
+
+          <label for="dob">Date Of Birth</label>
+          <input type="date" id="dob" name="dob"  placeholder="Date of Birth" required="required"/>
+          <label for="email">Email-Id</label>
+          <input type="email" id="email" name="email" placeholder="Email Id" required="required"/> 
+  
+          <label for="phone">Mobile</label>
+          <input type="number" id="phone" name="phone" placeholder="Mobile Number" required="required"/> 
+
+          </div>
+
+          <div id="btn-1">
+        
+        <button type="submit" ><strong>Sign Up</strong></button>
+        <button onclick="back()"  type="submit" ><strong>Back</strong></button>
+          
+      </div>
+          
+        </form>
+      </div>
+    </main>
+    <footer>
+        
+      <ul>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Health & Safety</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Help</a></li>
+      </ul>
+      <div class="icons">
+      <ul>
+      <li><a href="#" class="fa fa-facebook"></a></li>
+      <li><a href="#" class="fa fa-twitter"></a></li>
+      <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+      </div>
+  </footer>
+  </body>
+</html>

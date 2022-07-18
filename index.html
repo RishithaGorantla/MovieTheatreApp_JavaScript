@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Movieplex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+<body>
+    <header>
+        <img src="Images/copy.jpg" alt="logo">
+        <h1>Movieplex</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="theatres.html">Theatres</a></li>
+          <li><a href="#ticket">Tickets</a></li>
+          <li><a href="food&drinks.html">Food & Drinks</a></li>
+          <li><a href="buzz.html">Movie Buzz</a></li>
+          <li><a href="register.html">Screen Booking</a></li>
+          <li><a href="review.html">Movie Review</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="mainheading">
+            <div class="head-desc">
+            <h1>Movieplex</h1>
+            <h1 id="subtitle">"Experience big screen"</h1>
+            <div id="membership">
+            <p>Join our movieplex's monthly membership <br>
+            Starts at $10.99/monthly*</p><br>
+            <a href="#">Know more</a>
+        </div>
+        </div>
+        </section>
+        <section class="movieshead">
+            <h1>All movies</h1>
+            <p>Watch handpicked movie, curated with love</p>
+        </section>
+        <section class="nowshowing" id="ticket">
+        <h2>Now showing</h2>
+        <div id="movieslist">
+          <div class="movie"><a href="tickets.html"><img src="images/movie-1.jpg" alt="Movie Poster 1"></a> <br><br>
+          <a href="#" class="trailer">Watch Trailer</a>
+          </div>
+          <div class="movie" ><a href="tickets2.html"><img src="images/movie-2.jpg" alt="Movie Poster 2"></a><br><br>
+          <a href="#"class="trailer">Watch Trailer</a>
+        </div>
+          <div class="movie"><img src="images/movie-3.jpg" alt="Movie Poster 3"><br><br>
+          <a href="#" class="trailer">Watch Trailer</a>
+        </div>
+        <div id="hide1" class="movie"><img src="images/movie-4.jpg" alt="Movie Poster 4" ><br><br>
+          <a href="#" class="trailer">Watch Trailer</a>
+        </div>
+        <div id="hide2" class="movie"><img src="images/movie-5.jpg" alt="Movie Poster 5" ><br><br>
+          <a href="#" class="trailer">Watch Trailer</a>
+        </div>
+        </div>
+        <div class="showmore-btn">
+          <a href="#">Show more</a>
+        </div>
+        </section>
+        <section class="comingsoon">
+            <h2>Coming Soon</h2>
+            <div class="comingsoon-list">
+                <div class="movie1"><img src="images/cm-1.jpg" alt="Movie Poster 1"><br><br>
+                  <p class="movie-desc">Actor: Prabhas <br>Actress: Sruthi Hasan <br> Directed by Prashanth Neel <br> Produced by Vijay Kirgandur</p>
+                </div>
+                <div class="movie1"><img src="images/cm-2.jpg" alt="Movie Poster 2"><br><br>
+                  <p class="movie-desc">Actor: Akhil Akkineni <br> Actress: Pooja Hedge <br> Directed by	Bhaskar <br> Produced by Bunny Vas </p>
+                </div>
+                <div class="movie1"><img src="images/cm-3.png" alt="Movie Poster 3"><br><br>
+                  <p class="movie-desc">Actor:Ram Charan & NTR <br> Actress: Alia Bhatt <br> Directed by S. S. Rajamouli<br>Produced by D. V. V. Danayya</p>
+                </div>
+                <div class="movie1"><img src="images/cm-4.jpg" alt="Movie Poster 4"><br><br>
+                  <p class="movie-desc">Actor: Lewis Singwah Tan <br> Actress: Jessica McNamee <br>Directed by Simon McQuoid <br> Produced by James Wan</p>
+                </div>
+                <div class="movie1"><img src="images/cm-5.jpg" alt="Movie Poster 5"><br><br>
+                  <p class="movie-desc">Actor: Allu Arjun <br> Actress: Rashmika Mandana <br>Directed by Sukumar <br> Produced by Naveen Yerneni</p>
+                </div>
+                <div class="movie1"><img src="images/cm-6.jpg" alt="Movie Poster 6"><br><br>
+                  <p class="movie-desc">Actor: Patrick Wilson <br> Actress: Vera Farmiga <br>Directed by  David Leslie Johnson <br> Produced by James Wan</p>
+                </div>
+              </div>
+        </section>
+        <section class="partners">
+            <h2>Contact Us</h2>
+            <div class="details-right">
+              <div class="details-right-top">
+                  <span class="msg">Name:</span>
+                  <input id="name_of_sender"><br><br>
+                  <span class="msg">Email:</span>
+                  <input id="email_of_sender"><br><br>
+                  <span class="msg">Message:</span>
+                  <textarea class="message" cols="30" rows="5" id="message_of_sender"></textarea>
+              </div>
+            </div>
+
+            <div class="submit-btn">
+              <button onclick="send_mail()">Submit</button>
+        </section>
+
+    </main>
+    <footer>
+        
+        <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Health & Safety</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Contact US</a></li>
+        </ul>
+        <div class="icons">
+        <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

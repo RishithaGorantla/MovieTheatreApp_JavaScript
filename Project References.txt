@@ -1,0 +1,18 @@
+Hello professor the below are the references that we have used for our final js project.
+
+For Images.
+Google images
+pexels.com
+pixabay.com
+
+
+Websites referred.
+W3schools.com
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+freecodecamp.org
+
+
+
+Websites inspired from:
+netflix.com
+cineplex.com
